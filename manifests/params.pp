@@ -172,4 +172,12 @@ class yumrepo::params {
   $sclo_includepkgs = absent
   $sclo_exclude     = absent
   $sclo_descr       = 'SoftwareCollectionsOrg $releasever - $basearch'
+
+  # Nodesource 4.x Repo Parameteres
+  $nodesource4_url         = "https://rpm.nodesource.com/pub_4.x/el/${os_maj_release}/${::architecture}",
+  $nodesource4_enabled     = '1',
+  $nodesource4_gpgcheck    = '0',
+  $nodesource4_includepkgs = absent
+  $nodesource4_exclude     = absent
+  $nodesource4_descr       = 'Nodesource Nodejs4.x $releasever - $basearch'
 }
